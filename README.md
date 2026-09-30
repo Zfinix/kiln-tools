@@ -17,15 +17,15 @@ a git submodule. This repository ties them together: one checkout, one
 
 ### tock
 
-![tock counting down with big digits and a progress bar](https://raw.githubusercontent.com/Zfinix/tock/main/assets/demo.png)
+![tock counting down with big digits and a progress bar](https://raw.githubusercontent.com/Zfinix/tock/main/assets/demo.gif)
 
 ### pulse
 
-![pulse measuring download speed with a big readout, a sparkline and a progress bar](https://raw.githubusercontent.com/Zfinix/pulse/main/assets/demo.png)
+![pulse measuring download speed with a big readout, a sparkline and a progress bar](https://raw.githubusercontent.com/Zfinix/pulse/main/assets/demo.gif)
 
 ### ship
 
-![ship asking for a commit summary after the staged files, type and scope](https://raw.githubusercontent.com/Zfinix/ship/main/assets/demo.png)
+![ship asking for a commit summary after the staged files, type and scope](https://raw.githubusercontent.com/Zfinix/ship/main/assets/demo.gif)
 
 ## Working on the code
 
@@ -66,6 +66,7 @@ git submodule update --remote
 - [Conventions](docs/conventions.md): how every tool behaves, from flags to exit codes
 - [Add a tool to the collection](docs/adding-a-tool.md)
 - [Release kiln and the tools](docs/releasing.md)
+- [Record a demo](docs/recording-demos.md): the GIFs above, made in a real Ghostty window
 - [Why inline, not full screen](docs/why-inline.md)
 
 ## License
