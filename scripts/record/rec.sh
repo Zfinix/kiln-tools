@@ -35,11 +35,12 @@ start=$(now)
 screencapture -x -v -V "$secs" -R"$rect" "$work/take.mov" &
 capture=$!
 for _ in $(seq 1 $((secs * 10))); do [ -f "$marker" ] && break; sleep 0.1; done
-length=$(python3 -c "print(round($(now) - $start + 2.5, 2))")
+skip=1.4
+length=$(python3 -c "print(round($(now) - $start + 2.5 - $skip, 2))")
 wait "$capture" || true
 pkill -f -- "--title=$name " || true
 
-ffmpeg -loglevel error -y -t "$length" -i "$work/take.mov" -vf \
+ffmpeg -loglevel error -y -ss "$skip" -t "$length" -i "$work/take.mov" -vf \
   "fps=14,scale=1000:-1:flags=lanczos,split[a][b];[a]palettegen=stats_mode=diff[p];[b][p]paletteuse=dither=bayer:bayer_scale=4:diff_mode=rectangle" \
   "$out"
 echo "$out"

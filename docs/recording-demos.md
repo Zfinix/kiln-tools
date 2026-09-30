@@ -53,6 +53,7 @@ single characters reads as a lone esc.
   `screencapture` records just that rectangle.
 - `park.swift` moves the mouse pointer to the corner of the screen first, so
   it does not show up in the recording.
+- The first 1.4 seconds are cut, so the shell's login line never shows.
 - When the last command finishes, the recording is cut 2.5 seconds later and
   the window is closed, so a recording never shows anything else on your
   screen.
