@@ -1,0 +1,12 @@
+[submodule "kiln"]
+	path = kiln
+	url = https://github.com/Zfinix/kiln.git
+[submodule "tock"]
+	path = tock
+	url = https://github.com/Zfinix/tock.git
+[submodule "pulse"]
+	path = pulse
+	url = https://github.com/Zfinix/pulse.git
+[submodule "ship"]
+	path = ship
+	url = https://github.com/Zfinix/ship.git
