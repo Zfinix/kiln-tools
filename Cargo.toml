@@ -1,0 +1,6 @@
+[workspace]
+resolver = "3"
+members = ["kiln", "tock", "pulse", "ship"]
+
+[patch."https://github.com/Zfinix/kiln"]
+kiln = { path = "kiln" }
